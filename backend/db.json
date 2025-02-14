@@ -1,0 +1,28 @@
+{
+  "pensamentos": [
+    {
+      "id": 1,
+      "conteudo": "We are the champions my friend!",
+      "autoria": "Nay",
+      "modelo": "modelo1"
+    },
+    {
+      "id": 2,
+      "conteudo": "Estudando Angular",
+      "autoria": "Dev Alura",
+      "modelo": "modelo2"
+    },
+    {
+      "id": 3,
+      "conteudo": "Angular é o melhor'",
+      "autoria": "Dev Alura",
+      "modelo": "modelo3"
+    },
+    {
+      "conteudo": "122123123",
+      "autoria": "123123123",
+      "modelo": "modelo1",
+      "id": 4
+    }
+  ]
+}
