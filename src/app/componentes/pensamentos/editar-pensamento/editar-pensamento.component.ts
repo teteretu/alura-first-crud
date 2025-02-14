@@ -4,12 +4,12 @@ import { PensamentoService } from '../pensamento.service';
 import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
-  selector: 'app-excluir-pensamento',
+  selector: 'app-editar-pensamento',
   standalone: false,
-  templateUrl: './excluir-pensamento.component.html',
-  styleUrl: './excluir-pensamento.component.sass',
+  templateUrl: './editar-pensamento.component.html',
+  styleUrl: './editar-pensamento.component.sass',
 })
-export class ExcluirPensamentoComponent {
+export class EditarPensamentoComponent {
   pensamento: Pensamento = {
     id: 0,
     conteudo: '',
@@ -29,12 +29,10 @@ export class ExcluirPensamentoComponent {
     });
   }
 
-  excluirPensamento() {
-    if (this.pensamento.id) {
-      this.service.excluir(this.pensamento.id).subscribe(() => {
-        this.router.navigate(['/listarPensamento']);
-      });
-    }
+  editarPensamento() {
+    this.service.editar(this.pensamento).subscribe(() => {
+      this.router.navigate(['/listarPensamento']);
+    });
   }
 
   cancelar() {
